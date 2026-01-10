@@ -171,9 +171,9 @@ Understanding these three learning types is fundamental to grasping how AI works
 
 **Categories:**
 
-- 🐾 **Animals**: Dog, Cat, Bird, Fish
-- 🚗 **Vehicles**: Car, Bicycle, Airplane, Bus
-- 🍎 **Fruits**: Apple, Banana, Orange, Grapes
+- 🏛️ **Monuments**: Eiffel Tower, Statue of Liberty, Parthenon, Colosseum, Taj Mahal
+- ⚽ **Sports**: Football, Basketball, Tennis, American Football
+- 💻 **Computers**: Laptop, Desktop PC, Keyboard, Mouse
 
 **Training Items:** 6 labeled examples
 **Test Items:** 3 new images the AI hasn't seen

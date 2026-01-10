@@ -164,22 +164,22 @@ const SupervisedLab = ({ onComplete, onScore }: { onComplete: () => void; onScor
   const [isAnimating, setIsAnimating] = useState(false)
 
   const allItems: DataItem[] = [
-    { id: 1, emoji: "🐕", label: "Dog", category: "animal" },
-    { id: 2, emoji: "🐈", label: "Cat", category: "animal" },
-    { id: 3, emoji: "🚗", label: "Car", category: "vehicle" },
-    { id: 4, emoji: "🚲", label: "Bicycle", category: "vehicle" },
-    { id: 5, emoji: "🍎", label: "Apple", category: "fruit" },
-    { id: 6, emoji: "🍌", label: "Banana", category: "fruit" },
-    { id: 7, emoji: "🐦", label: "Bird", category: "animal" },
-    { id: 8, emoji: "✈️", label: "Airplane", category: "vehicle" },
-    { id: 9, emoji: "🍊", label: "Orange", category: "fruit" },
-    { id: 10, emoji: "🐟", label: "Fish", category: "animal" },
+    { id: 1, emoji: "�", label: "Eiffel Tower", category: "monument" },
+    { id: 2, emoji: "🗽", label: "Statue of Liberty", category: "monument" },
+    { id: 3, emoji: "⚽", label: "Football", category: "sport" },
+    { id: 4, emoji: "🏀", label: "Basketball", category: "sport" },
+    { id: 5, emoji: "💻", label: "Laptop", category: "computer" },
+    { id: 6, emoji: "🖥️", label: "Desktop PC", category: "computer" },
+    { id: 7, emoji: "🏛️", label: "Parthenon", category: "monument" },
+    { id: 8, emoji: "🎾", label: "Tennis", category: "sport" },
+    { id: 9, emoji: "⌨️", label: "Keyboard", category: "computer" },
+    { id: 10, emoji: "🏟️", label: "Colosseum", category: "monument" },
   ]
 
   const testItems: DataItem[] = [
-    { id: 11, emoji: "🐕‍🦺", label: "Service Dog", category: "animal" },
-    { id: 12, emoji: "🚌", label: "Bus", category: "vehicle" },
-    { id: 13, emoji: "🍇", label: "Grapes", category: "fruit" },
+    { id: 11, emoji: "🕌", label: "Taj Mahal", category: "monument" },
+    { id: 12, emoji: "🏈", label: "American Football", category: "sport" },
+    { id: 13, emoji: "🖱️", label: "Mouse", category: "computer" },
   ]
 
   useEffect(() => {
@@ -287,18 +287,18 @@ const SupervisedLab = ({ onComplete, onScore }: { onComplete: () => void; onScor
         
         {/* Category Buttons */}
         <div className="grid grid-cols-3 gap-3">
-          {["animal", "vehicle", "fruit"].map((cat) => (
+          {["monument", "sport", "computer"].map((cat) => (
             <Button
               key={cat}
               onClick={() => handleLabel(item.id, cat)}
               disabled={isAnimating}
               className={`h-16 text-lg capitalize ${
-                cat === "animal" ? "bg-green-500 hover:bg-green-600" :
-                cat === "vehicle" ? "bg-blue-500 hover:bg-blue-600" :
-                "bg-orange-500 hover:bg-orange-600"
+                cat === "monument" ? "bg-amber-500 hover:bg-amber-600" :
+                cat === "sport" ? "bg-green-500 hover:bg-green-600" :
+                "bg-blue-500 hover:bg-blue-600"
               }`}
             >
-              {cat === "animal" ? "🐾" : cat === "vehicle" ? "🚗" : "🍎"} {cat}
+              {cat === "monument" ? "🏛️" : cat === "sport" ? "⚽" : "💻"} {cat}
             </Button>
           ))}
         </div>
@@ -336,14 +336,14 @@ const SupervisedLab = ({ onComplete, onScore }: { onComplete: () => void; onScor
         </div>
         
         <div className="grid grid-cols-3 gap-3">
-          {["animal", "vehicle", "fruit"].map((cat) => (
+          {["monument", "sport", "computer"].map((cat) => (
             <Button
               key={cat}
               onClick={() => handleTest(cat)}
               variant="outline"
               className="h-16 text-lg capitalize border-2 hover:border-violet-400 hover:bg-violet-50"
             >
-              {cat === "animal" ? "🐾" : cat === "vehicle" ? "🚗" : "🍎"} {cat}
+              {cat === "monument" ? "🏛️" : cat === "sport" ? "⚽" : "💻"} {cat}
             </Button>
           ))}
         </div>
