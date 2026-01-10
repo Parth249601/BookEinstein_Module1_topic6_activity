@@ -164,7 +164,7 @@ const SupervisedLab = ({ onComplete, onScore }: { onComplete: () => void; onScor
   const [isAnimating, setIsAnimating] = useState(false)
 
   const allItems: DataItem[] = [
-    { id: 1, emoji: "�", label: "Eiffel Tower", category: "monument" },
+    { id: 1, emoji: "🏰", label: "Castle", category: "monument" },
     { id: 2, emoji: "🗽", label: "Statue of Liberty", category: "monument" },
     { id: 3, emoji: "⚽", label: "Football", category: "sport" },
     { id: 4, emoji: "🏀", label: "Basketball", category: "sport" },

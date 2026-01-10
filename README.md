@@ -171,7 +171,7 @@ Understanding these three learning types is fundamental to grasping how AI works
 
 **Categories:**
 
-- 🏛️ **Monuments**: Eiffel Tower, Statue of Liberty, Parthenon, Colosseum, Taj Mahal
+- 🏛️ **Monuments**: Castle, Statue of Liberty, Parthenon, Colosseum, Taj Mahal
 - ⚽ **Sports**: Football, Basketball, Tennis, American Football
 - 💻 **Computers**: Laptop, Desktop PC, Keyboard, Mouse
 
